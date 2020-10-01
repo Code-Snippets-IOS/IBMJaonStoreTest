@@ -24,38 +24,44 @@ class JsonStoreTestDelegate: PPAppDelegteProtocol {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions
                         launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        addCollection()
-        findCollection()
-        replaceCollection()
-        findCollection()
+        if findCollection() == false {
+            addCollection()
+            _ = findCollection()
+        }
+        else {
+            replaceCollection()
+            _ = findCollection()
+        }
         return true
     }
     func replaceCollection() {
-        let data1: [String: Any] = ["name": "aromal replaceed", "age": 12]
+        let data1: [String: Any] = ["name": "aromal", "age": Int.random(in: 1..<100)]
         let document: [String: Any] = ["_id": 1, "json": data1]
         do {
+            print("🟥 🟥 replacing existing data with \(data1) ")
             let collection = try openCollection(name: collectionName)
             try collection.replaceDocuments([document], andMarkDirty: false)
-            print("🟥 🟥 replaceCollection data to json store success")
+            print("🟥 🟥 replace data in json store success")
         } catch let error as NSError {
-            print("🟥 🟥 replaceCollection error ", error)
+            print("🟥 🟥 replace error ", error)
         }
     }
     func addCollection() {
         let data1: [String: Any] = ["name": "aromal", "age": 32]
         do {
+            print("🟥 🟥 adding data \(data1) ")
             let collection = try openCollection(name: collectionName)
             try collection.addData([data1], andMarkDirty: false, with: nil)
             print("🟥 🟥 added data to json store success")
         } catch let error as NSError {
-            print("🟥 🟥 addCollection error ", error)
+            print("🟥 🟥 add error ", error)
         }
     }
-    func findCollection() {
+    func findCollection() -> Bool{
         do {
             let collection = try openCollection(name: collectionName)
             let results = try collection.find(withIds: [1], andOptions: nil)
-            print("🟥 🟥 find data from json store success")
+            print("🟥 🟥 finding data from json store")
             if let data = results.first as? [String: Any],
                 let json: [String: Any] = data["json"]  as? [String: Any] {
                 let jsonData = try JSONSerialization.data(withJSONObject: json, options: [])
@@ -65,8 +71,10 @@ class JsonStoreTestDelegate: PPAppDelegteProtocol {
                 throw JsonStoreError.decodeError
             }
         } catch let error as NSError {
-            print("🟥 🟥 findCollection error ", error)
+            print("🟥 🟥 find error ", error)
+            return false
         }
+        return true
     }
     func openCollection(name: String) throws -> JSONStoreCollection {
         guard let jsonStoreinstance = JSONStore.sharedInstance() else {
@@ -77,10 +85,10 @@ class JsonStoreTestDelegate: PPAppDelegteProtocol {
         passwordOptions?.username = usernameStore
         passwordOptions?.password = storePaz
         do {
-            print("🟥 🟥 trying to open collection \(name)")
+//            print("🟥 🟥 trying to open collection \(name)")
             try jsonStoreinstance.openCollections([collection], with: passwordOptions)
-        } catch let error {
-            print("🟥 🟥 error in openning", error)
+        } catch {
+//            print("🟥 🟥 error in openning", error)
         }
         let openedCollection = jsonStoreinstance.getCollectionWithName(name)
         if openedCollection == nil {

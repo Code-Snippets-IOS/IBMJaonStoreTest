@@ -4,7 +4,7 @@
 target 'IBMJsonStoreTest' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'IBMMobileFirstPlatformFoundationJSONStore', '8.0.2019121007', :inhibit_warnings => true
+  pod 'IBMMobileFirstPlatformFoundationJSONStore', :inhibit_warnings => true
 
   # Pods for IBMJsonStoreTest
 
