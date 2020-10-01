@@ -11,11 +11,15 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    lazy var delegates: [PPAppDelegteProtocol] = {
+        return [JsonStoreTestDelegate()]
+    }()
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        return true
+        return delegates.first(where: {$0.application?(application,
+                                                       didFinishLaunchingWithOptions: launchOptions) ?? true}) == nil
     }
 
     // MARK: UISceneSession Lifecycle

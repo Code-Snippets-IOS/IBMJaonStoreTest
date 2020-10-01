@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34B1F508A2B5F4E79B187F25 /* Pods_IBMJsonStoreTest_IBMJsonStoreTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51137196A0FD26DFA70EBA70 /* Pods_IBMJsonStoreTest_IBMJsonStoreTestUITests.framework */; };
+		458FD1183A75E48E8F009A51 /* Pods_IBMJsonStoreTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3A5179D9518B2396B3483F0 /* Pods_IBMJsonStoreTest.framework */; };
+		6783384FDDC5387A1FCF6ACD /* Pods_IBMJsonStoreTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A273EF3C84691BA5F672D3D /* Pods_IBMJsonStoreTestTests.framework */; };
 		B38673952526269A00E1850C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38673942526269A00E1850C /* AppDelegate.swift */; };
 		B38673972526269A00E1850C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38673962526269A00E1850C /* SceneDelegate.swift */; };
 		B38673992526269A00E1850C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38673982526269A00E1850C /* ContentView.swift */; };
@@ -15,6 +18,8 @@
 		B38673A12526269D00E1850C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B386739F2526269D00E1850C /* LaunchScreen.storyboard */; };
 		B38673AC2526269D00E1850C /* IBMJsonStoreTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38673AB2526269D00E1850C /* IBMJsonStoreTestTests.swift */; };
 		B38673B72526269D00E1850C /* IBMJsonStoreTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38673B62526269D00E1850C /* IBMJsonStoreTestUITests.swift */; };
+		B38673C6252629D900E1850C /* PPAppDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38673C4252629D900E1850C /* PPAppDelegateProtocol.swift */; };
+		B38673C7252629D900E1850C /* JsonStoreTestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38673C5252629D900E1850C /* JsonStoreTestDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		086DC5A6F0ED8A30620811DA /* Pods-IBMJsonStoreTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMJsonStoreTest.release.xcconfig"; path = "Target Support Files/Pods-IBMJsonStoreTest/Pods-IBMJsonStoreTest.release.xcconfig"; sourceTree = "<group>"; };
+		4459CC9488D6E73C5097268E /* Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests/Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		51137196A0FD26DFA70EBA70 /* Pods_IBMJsonStoreTest_IBMJsonStoreTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBMJsonStoreTest_IBMJsonStoreTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A273EF3C84691BA5F672D3D /* Pods_IBMJsonStoreTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBMJsonStoreTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		882D4261C14C7CF13C2066F9 /* Pods-IBMJsonStoreTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMJsonStoreTestTests.release.xcconfig"; path = "Target Support Files/Pods-IBMJsonStoreTestTests/Pods-IBMJsonStoreTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		B38673912526269A00E1850C /* IBMJsonStoreTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBMJsonStoreTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38673942526269A00E1850C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B38673962526269A00E1850C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +59,12 @@
 		B38673B22526269D00E1850C /* IBMJsonStoreTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBMJsonStoreTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38673B62526269D00E1850C /* IBMJsonStoreTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBMJsonStoreTestUITests.swift; sourceTree = "<group>"; };
 		B38673B82526269D00E1850C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B38673C4252629D900E1850C /* PPAppDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPAppDelegateProtocol.swift; sourceTree = "<group>"; };
+		B38673C5252629D900E1850C /* JsonStoreTestDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonStoreTestDelegate.swift; sourceTree = "<group>"; };
+		B3A5179D9518B2396B3483F0 /* Pods_IBMJsonStoreTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBMJsonStoreTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D79537E5A781597870366CA7 /* Pods-IBMJsonStoreTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMJsonStoreTest.debug.xcconfig"; path = "Target Support Files/Pods-IBMJsonStoreTest/Pods-IBMJsonStoreTest.debug.xcconfig"; sourceTree = "<group>"; };
+		EB12359C747B5E1B735FB6B1 /* Pods-IBMJsonStoreTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMJsonStoreTestTests.debug.xcconfig"; path = "Target Support Files/Pods-IBMJsonStoreTestTests/Pods-IBMJsonStoreTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FDFC3391297402132CCE7B16 /* Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests.release.xcconfig"; path = "Target Support Files/Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests/Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				458FD1183A75E48E8F009A51 /* Pods_IBMJsonStoreTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6783384FDDC5387A1FCF6ACD /* Pods_IBMJsonStoreTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34B1F508A2B5F4E79B187F25 /* Pods_IBMJsonStoreTest_IBMJsonStoreTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		154541878E4878C802890441 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3A5179D9518B2396B3483F0 /* Pods_IBMJsonStoreTest.framework */,
+				51137196A0FD26DFA70EBA70 /* Pods_IBMJsonStoreTest_IBMJsonStoreTestUITests.framework */,
+				6A273EF3C84691BA5F672D3D /* Pods_IBMJsonStoreTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		235BEA6CFD81C06A0978C4AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D79537E5A781597870366CA7 /* Pods-IBMJsonStoreTest.debug.xcconfig */,
+				086DC5A6F0ED8A30620811DA /* Pods-IBMJsonStoreTest.release.xcconfig */,
+				4459CC9488D6E73C5097268E /* Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests.debug.xcconfig */,
+				FDFC3391297402132CCE7B16 /* Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests.release.xcconfig */,
+				EB12359C747B5E1B735FB6B1 /* Pods-IBMJsonStoreTestTests.debug.xcconfig */,
+				882D4261C14C7CF13C2066F9 /* Pods-IBMJsonStoreTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B38673882526269A00E1850C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +125,8 @@
 				B38673AA2526269D00E1850C /* IBMJsonStoreTestTests */,
 				B38673B52526269D00E1850C /* IBMJsonStoreTestUITests */,
 				B38673922526269A00E1850C /* Products */,
+				235BEA6CFD81C06A0978C4AD /* Pods */,
+				154541878E4878C802890441 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +143,8 @@
 		B38673932526269A00E1850C /* IBMJsonStoreTest */ = {
 			isa = PBXGroup;
 			children = (
+				B38673C5252629D900E1850C /* JsonStoreTestDelegate.swift */,
+				B38673C4252629D900E1850C /* PPAppDelegateProtocol.swift */,
 				B38673942526269A00E1850C /* AppDelegate.swift */,
 				B38673962526269A00E1850C /* SceneDelegate.swift */,
 				B38673982526269A00E1850C /* ContentView.swift */,
@@ -143,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B38673BB2526269D00E1850C /* Build configuration list for PBXNativeTarget "IBMJsonStoreTest" */;
 			buildPhases = (
+				0FDE6A5D1031429F41FCD77F /* [CP] Check Pods Manifest.lock */,
 				B386738D2526269A00E1850C /* Sources */,
 				B386738E2526269A00E1850C /* Frameworks */,
 				B386738F2526269A00E1850C /* Resources */,
+				3E2F6D4485CF838EC81D9FD2 /* [CP] Embed Pods Frameworks */,
+				4E234976FF8993922669E068 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B38673BE2526269D00E1850C /* Build configuration list for PBXNativeTarget "IBMJsonStoreTestTests" */;
 			buildPhases = (
+				0719E5E2E5575657CD585E88 /* [CP] Check Pods Manifest.lock */,
 				B38673A32526269D00E1850C /* Sources */,
 				B38673A42526269D00E1850C /* Frameworks */,
 				B38673A52526269D00E1850C /* Resources */,
@@ -178,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B38673C12526269D00E1850C /* Build configuration list for PBXNativeTarget "IBMJsonStoreTestUITests" */;
 			buildPhases = (
+				748ADB00FB262158E5F7D86A /* [CP] Check Pods Manifest.lock */,
 				B38673AE2526269D00E1850C /* Sources */,
 				B38673AF2526269D00E1850C /* Frameworks */,
 				B38673B02526269D00E1850C /* Resources */,
+				FB8CCE6E586F3F626F21B833 /* [CP] Embed Pods Frameworks */,
+				558FBB2A8568DF88A56DAC0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,12 +315,151 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0719E5E2E5575657CD585E88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IBMJsonStoreTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0FDE6A5D1031429F41FCD77F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IBMJsonStoreTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E2F6D4485CF838EC81D9FD2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IBMJsonStoreTest/Pods-IBMJsonStoreTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IBMJsonStoreTest/Pods-IBMJsonStoreTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IBMJsonStoreTest/Pods-IBMJsonStoreTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E234976FF8993922669E068 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IBMJsonStoreTest/Pods-IBMJsonStoreTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IBMJsonStoreTest/Pods-IBMJsonStoreTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IBMJsonStoreTest/Pods-IBMJsonStoreTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		558FBB2A8568DF88A56DAC0C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests/Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests/Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests/Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		748ADB00FB262158E5F7D86A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB8CCE6E586F3F626F21B833 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests/Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests/Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests/Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B386738D2526269A00E1850C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38673C6252629D900E1850C /* PPAppDelegateProtocol.swift in Sources */,
 				B38673952526269A00E1850C /* AppDelegate.swift in Sources */,
+				B38673C7252629D900E1850C /* JsonStoreTestDelegate.swift in Sources */,
 				B38673972526269A00E1850C /* SceneDelegate.swift in Sources */,
 				B38673992526269A00E1850C /* ContentView.swift in Sources */,
 			);
@@ -432,6 +624,7 @@
 		};
 		B38673BC2526269D00E1850C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D79537E5A781597870366CA7 /* Pods-IBMJsonStoreTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +644,7 @@
 		};
 		B38673BD2526269D00E1850C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 086DC5A6F0ED8A30620811DA /* Pods-IBMJsonStoreTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +664,7 @@
 		};
 		B38673BF2526269D00E1850C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB12359C747B5E1B735FB6B1 /* Pods-IBMJsonStoreTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +686,7 @@
 		};
 		B38673C02526269D00E1850C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 882D4261C14C7CF13C2066F9 /* Pods-IBMJsonStoreTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +708,7 @@
 		};
 		B38673C22526269D00E1850C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4459CC9488D6E73C5097268E /* Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -531,6 +728,7 @@
 		};
 		B38673C32526269D00E1850C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDFC3391297402132CCE7B16 /* Pods-IBMJsonStoreTest-IBMJsonStoreTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
